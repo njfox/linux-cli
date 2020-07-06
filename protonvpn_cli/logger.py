@@ -20,7 +20,7 @@ def get_logger():
         os.mkdir(CONFIG_DIR)
 
     logger = logging.getLogger("protonvpn-cli")
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.CRITICAL)
 
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(FORMATTER)
