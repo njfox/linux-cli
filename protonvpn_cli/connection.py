@@ -467,7 +467,8 @@ def openvpn_connect(servername, protocol):
                 "openvpn",
                 "--config", OVPN_FILE,
                 "--auth-user-pass", PASSFILE,
-                "--dev-type", "tun"
+                "--dev-type", "tun",
+                "--mute-replay-warnings"
             ],
             stdout=f, stderr=f
         )
